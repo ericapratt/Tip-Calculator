@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Normalize.css -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- custom font style from google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="container">
+    <div id="container-content">
+
+        <h1> Tip Calculator </h1>
+        <label for="bill">How much was your bill ?</label>
+        <br> <br>
+
+        <label for="bill">&#36;</label>
+        <input type="text" id="bill" required>
+        <br> <br>
+
+        <label for="serviceOptions"> How was our services ?</label>
+        <br> <br>
+
+        <select id="serviceOptions" >
+            <option value="0.3"> 30%  - Excellent </option>
+            <option value="0.2"> 20% - Very Good </option>
+            <option value="0.15"> 15% - Good </option>
+            <option value="0.1"> 10% - Ok </option>
+            <option value="0.05"> 5% - Bad </option>
+        </select>
+        <br> <br>
+
+        <label for="share"> How many people are sharing the bill ?</label>
+        <br> <br>
+
+        <input type="text"  id="share"/><label id="share1">  People</label>
+
+        <br>
+        <br>
+        <input type="button" value="Go!" id="calculateBtn" onclick="calculateTip()"/>
+
+        <div class="hideClass">
+            <h2> Tip Amount </h2>
+            <super>&#36;</super><p id="result">0.00</p><p id="each">each</p>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
